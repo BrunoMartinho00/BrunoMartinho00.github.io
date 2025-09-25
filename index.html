@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Martinho</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Landing Page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Olá Mundo</h1>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#disciplina">Interfaces Web</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <p>Eis a minha primeira página Web</p>
+  <main>
+    <!-- ===== HERO IMAGE ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <h1>Bem-vindo ao meu mundo criativo 🌟</h1>
+        <p>Construindo experiências digitais únicas e inspiradoras.</p>
+        <a href="#projetos" class="btn">Ver Projetos</a>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Projeto 1</h3>
+          <p>Descrição breve do projeto 1. Tecnologias usadas: HTML, CSS, JS.</p>
+        </article>
+        <article class="card">
+          <h3>Projeto 2</h3>
+          <p>Descrição breve do projeto 2. Tecnologias usadas: React, API.</p>
+        </article>
+        <article class="card">
+          <h3>Projeto 3</h3>
+          <p>Descrição breve do projeto 3. Tecnologias usadas: Node, Express.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== DISCIPLINA ===== -->
+    <section id="disciplina" class="disciplina">
+      <div class="texto">
+        <h2>Interfaces Web</h2>
         <p>
-            Na unidade curricular de 
-            <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232">
-                Desenvolvimento de Interfaces Web 
-            </a>
-            abordaremos as seguintes tecnologias Web &#127760
+          Nesta disciplina exploramos princípios de design, responsividade,
+          acessibilidade e melhores práticas no desenvolvimento de interfaces
+          modernas e envolventes.
         </p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React e Next.js</li>
-        </ul>
-        <p>Iremos criar soluções criativas!</p>
-        <img src="img/diw.svg" alt="Desenvolvimento de Interfaces Web">
-
-        <ul>
-            <li><a href="Lab1/index.html">Lab1</a></li>
-            <li><a href="Lab2/index.html">Lab2</a></li>
-        </ul>
-    </main>
-
-    <footer>
-        <p>Universidade Lusófona  ©  2025</p>
-    </footer>
-    
+      </div>
+      <div class="wordcloud">
+        <img src="imagens/wordcloud.png" alt="Wordcloud da disciplina">
+      </div>
+    </section>
+  </main>
 </body>
 </html>

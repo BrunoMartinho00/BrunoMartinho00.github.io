@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Quizz</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bruno Martinho">
+        <meta name="description" content="Website sobre Lisboa">
+        <meta name="keywords" content="palavras chave">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Lisboa</h1>
+            <img src="images/images.jpg" alt="Lisboa">
+            <br><br>
+        </header>
+
+
+        <nav>
+            <a href="index.html" class="naveg">Introdução</a>
+            <a href="local.html" class="naveg">Localização</a>
+            <a href="multimedia.html" class="naveg">Multimedia</a>
+            <a href="info.html" class="naveg">Informação</a>
+            <a href="quizz.html" class="naveg" style="border-bottom: 3px solid gray;">Quizz</a>
+            <a href="html5-css.html" class="naveg">HTML5 e CSS</a>
+        </nav>
+        <br><br>
+
+
+        <main>
+            <section>
+                <h3>Quizz</h3>
+                <p>Nesta página será feito um quizz para testar se o utilizador conhece bem Lisboa.</p>
+            </section>
+
+            <fieldset>Mostre que conhece Lisboa</fieldset>
+
+            <form method="POST" action="mailto: brunomartinho@gmail.com" enctype="multipart/form-data">
+                <fieldset>
+                    <fieldset>Info</fieldset>
+                    <p>Nome: <input type="text" name="nome" id="nome" placeholder="José" autocomplete="on" autofocus required></p>
+                    <p>Apelido: <input type="text" name="apelido" id="apelido" placeholder="Silva" autocomplete="on" required></p>
+                    <p>Email: <input type="email" name="email" id="email" placeholder="nome@dominio.pt" autocomplete="on" required></p>
+                </fieldset>
+
+                <fieldset>
+                    <fieldset>Perguntas</fieldset>
+                    <section>
+                        <p>1. Em que país fica Lisboa?</p>
+                        <p><input type="text" name="pais" id="question1" maxlength="8" pattern="[A-Za-z]" title="Apenas são permitidas letras" list="question1List"></p>
+                        <datalist id="question1List">
+                            <option value="Portugal">
+                            <option value="Espanha">
+                            <option value="França">
+                            <option value="Alemanha">
+                            <option value="Itália">
+                        </datalist>
+                    </section><br><br>
+
+                    <section>
+                        <p>2. Quantos habitantes tem Lisboa?</p>
+                        <input type="radio" id="h504718" name="question2" value="504 718">
+                        <label for="h504718">504 718</label><br>
+                        <input type="radio" id="h152608" name="question2" value="152 668">
+                        <label for="h152668">152 668</label><br>
+                        <input type="radio" id="h740915" name="question2" value="740 915">
+                        <label for="h740915">740 915</label>
+                    </section><br><br>
+
+                    <section>
+                        <p>3. Quais destas pontes fica em Lisboa?</p>
+                        <input type="checkbox" id="p25Abril" name="p25Abril" value="Ponte 25 de Abril">
+                        <label for="p25Abril">Ponte 25 de Abril</label><br>
+                        <input type="checkbox" id="dLuis" name="dLuis" value="Ponte Dom Luis">
+                        <label for="dLuis">Ponte Dom Luis</label><br>
+                        <input type="checkbox" id="salgueiroMaia" name="salgueiroMaia" value="Ponte Salgueiro Maia">
+                        <label for="salgueiroMaia">Ponte Salgueiro Maia</label><br>
+                        <input type="checkbox" id="vascoDaGama" name="vascoDaGama" value="Ponte Vasco da Gama">
+                        <label for="vascoDaGama">Ponte Vasco da Gama</label><br>
+                    </section><br><br>
+
+                    <section>
+                        <p>4. Quando foi inaugurado o Aeroporto da Portela?</p>
+                        <input type="date" id="airportDate" name="airportDate">
+                    </section><br><br>
+
+                    <section>
+                        <p>5. Indica onde fica a Torre de Belém?</p>
+                        <input type="image" src="images/map.jpg" alt="kjh" width="800" height="526">
+                    </section><br><br>
+
+                    <section>
+                        <p>6. Indica qual a tua cor favorita?</p>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    </section><br><br>
+
+                    <section>
+                        <p>7. Em que ano foi inaugurada a Torre de Belém? (Dica: foi depois do ano 1000)</p>
+                        <input type="number" id="towerDate" name="towerDate" min="1000" max="2023" size="4">
+                    </section><br><br>
+
+                    <section>
+                        <p>8. De 0 a 100, qual a pontuação que achas que vais ter?</p>
+                        <input type="range" id="score" name="score" min="0" max="100">
+                    </section><br><br>
+
+                    <section>
+                        <p>9. Quais cadeiras ja fizeste?</p>
+                        <select name="cadeiras" id="cadeiras" multiple>
+                            <option value="LP1">Linguagens de Programação 1</option>
+                            <option value="LP2">Linguagens de Programação 2</option>
+                            <option value="SO">Sistemas Operativos</option>
+                            <option value="M1">Matemática I</option>
+                            <option value="M2">Matemática II</option>
+                        </select>
+                    </section><br><br>
+
+                    <section>
+                        <p>10. Faz um breve comentario sobre este Quizz</p>
+                        <textarea name="comment" rows="4" cols="100" maxlength="100">Um breve comentário.</textarea>
+                    </section><br><br>
+
+                    <section>
+                        <input type="submit">
+                    </section><br><br>
+                    
+                </fieldset>
+            </form>
+            
+        </main>
+        
+
+        <br><br>
+        <footer>
+            <p>Bruno Martinho - a22400694 - Universidade Lusófona - 2025</p>
+        </footer>
+
+        
+    </body>
+</html>

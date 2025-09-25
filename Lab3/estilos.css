@@ -1,0 +1,51 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #18191a;
+    color: aliceblue;
+}
+
+a.naveg{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Pagina selecionada
+    border-bottom: 5px solid;
+    border-color: orange;
+    tedfsf
+*/
+nav {
+    height: 40px;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #242526;
+}
+
+a.naveg:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #242526;
+
+}
+
+a.naveg:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #242526;
+}
+
+a.naveg:hover {
+    background-color: #3A3B3C;
+    text-decoration: none;
+    /*font-size: 20px;
+    font-weight: bolder;*/
+    
+}
+
+a.naveg:active {
+    background-color: #242526;
+    text-decoration: none;
+}
