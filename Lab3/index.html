@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <title>Introdução</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Bruno Martinho">
-        <meta name="description" content="Website sobre Lisboa">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" href="estilos.css">
-    </head>
 
-    
+<head>
+    <meta charset="utf-8">
+    <title>Introdução</title>
+    <meta name="author" content="Bruno Martinho">
+    <meta name="description" content="Website sobre Lisboa">
+    <meta name="keywords" content="Lisboa, turismo, Portugal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-    <body>
-        <header>
-            <h1>Lisboa</h1>
-            <img src="images/images.jpg" alt="Lisboa">
-            <br><br>
-        </header>
+<body>
+    <header>
+        <h1>Lisboa</h1>
+        <img src="images/images.jpg" alt="Lisboa">
 
+        <!-- Checkbox invisível para controlar o menu -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Ícone hamburguer visível em ecrãs pequenos -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
         <nav>
             <a href="index.html" class="naveg" style="border-bottom: 3px solid gray;">Introdução</a>
@@ -27,35 +29,37 @@
             <a href="quizz.html" class="naveg">Quizz</a>
             <a href="html5-css.html" class="naveg">HTML5 e CSS</a>
         </nav>
-        <br><br>
+    </header>
 
-        
-        <main>
-            <section>
-                <h2>Introdução</h2>
-                <p>Cidade maravilhosa à beira Tejo</p>
-            </section>            
-            
-            <section>
-                <p>Este é o meu site com as seguintes páginas:</p>
-                <ul>
-                    <a href="index.html"><li>Introdução</li></a>
-                    <a href="local.html"><li>Localização</li></a>
-                    <a href="multimedia.html"><li>Multimedia</li></a>
-                    <a href="info.html"><li>Informação</li></a>
-                    <a href="quizz.html"><li>Quizz</li></a>
-                    <a href="html5-css.html"><li>HTML5 e CSS</li></a>
-                </ul>
-            </section>
+    <main>
+        <section>
+            <h2>Introdução</h2>
+            <p>Cidade maravilhosa à beira Tejo</p>
+        </section>
 
-            <figcaption><figure><img src="images/city.png" alt="Cidade"></figure></figcaption>
-            
-            
-        </main>
-        
-        <br><br>
-        <footer>
-            <p>Bruno Martinho - a22400694 - Universidade Lusófona - 2025</p>
-        </footer>
-    </body>
+        <section>
+            <p>Este é o meu site com as seguintes páginas:</p>
+            <ul>
+                <li><a href="index.html">Introdução</a></li>
+                <li><a href="local.html">Localização</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="info.html">Informação</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="html5-css.html">HTML5 e CSS</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <figure>
+                <img src="images/city.png" alt="Cidade de Lisboa">
+                <figcaption>Vista panorâmica da cidade de Lisboa</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bruno Martinho - a22400694 - Universidade Lusófona - 2025</p>
+    </footer>
+</body>
+
 </html>

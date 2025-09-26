@@ -1,51 +1,120 @@
+/* ===== BASE ===== */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #18191a;
-    color: aliceblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a.naveg{
-    display: flex;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
+body {
+  background-color: #18191a;
+  color: aliceblue;
+  line-height: 1.5;
 }
 
-/* Pagina selecionada
-    border-bottom: 5px solid;
-    border-color: orange;
-    tedfsf
-*/
+header {
+  text-align: center;
+  padding: 20px;
+  background: #18191a;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== NAV ===== */
 nav {
-    height: 40px;
-    text-align: center;
-    justify-content: space-evenly;
-    display: flex;
-    background-color: #242526;
+  background-color: #242526;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: max-height 0.4s ease;
 }
 
-a.naveg:link {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 18px;
-    background-color: #242526;
-
-}
-
-a.naveg:visited {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: #242526;
+a.naveg {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #242526;
+  transition: background-color 0.3s;
 }
 
 a.naveg:hover {
-    background-color: #3A3B3C;
-    text-decoration: none;
-    /*font-size: 20px;
-    font-weight: bolder;*/
-    
+  background-color: #3A3B3C;
 }
 
-a.naveg:active {
-    background-color: #242526;
-    text-decoration: none;
+/* ===== HAMBURGER ===== */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  padding: 10px 15px;
+  background-color: #242526;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menu-toggle {
+  display: none; /* esconde checkbox */
+}
+
+#fotosSection, #videoSection, #poemaSection {
+    height: 100vh;
+    justify-items: center;
+    align-content: space-around;
+}
+
+#fotosSection {
+    background-color: red;
+}
+
+#videoSection {
+
+    background-color: green;
+}
+
+#poemaSection{
+    background-color: blue;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  /* mostrar botão hamburger */
+  .menu-icon {
+    display: block;
+    text-align: right;
+  }
+
+  /* menu fechado */
+  nav {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  /* ✅ usar ~ para apanhar todos os irmãos seguintes */
+  #menu-toggle:checked ~ nav {
+    max-height: 1000px;  /* altura suficiente para todos os links */
+  }
+
+  a.naveg {
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid #3A3B3C;
+  }
+}
+
+main {
+  padding: 50px;
+  text-align: justify;
+}
+
+footer {
+  padding: 20px;
+  background-color: #242526;
+  text-align: center;
 }

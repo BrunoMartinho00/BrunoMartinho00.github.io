@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <title>Localização</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Bruno Martinho">
-        <meta name="description" content="Website sobre Lisboa">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" href="estilos.css">
-    </head>
 
-    <body>
-        <header>
-            <h1>Lisboa</h1>
-            <img src="images/images.jpg" alt="Lisboa">
-            <br><br><br>
-        </header>
+<head>
+    <meta charset="utf-8">
+    <title>Localização</title>
+    <meta name="author" content="Bruno Martinho">
+    <meta name="description" content="Website sobre Lisboa">
+    <meta name="keywords" content="Lisboa, localização, mapa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
+<body>
+    <header>
+        <h1>Lisboa</h1>
+        <img src="images/images.jpg" alt="Lisboa">
+
+        <!-- Checkbox invisível para controlar o menu -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- Ícone hambúrguer visível apenas em ecrãs pequenos -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
         <nav>
             <a href="index.html" class="naveg">Introdução</a>
@@ -25,20 +29,23 @@
             <a href="quizz.html" class="naveg">Quizz</a>
             <a href="html5-css.html" class="naveg">HTML5 e CSS</a>
         </nav>
-        <br><br>
+    </header>
 
+    <main>
+        <p>A capital de Portugal</p>
+        <figure>
+            <figcaption>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99580.03468301838!2d-9.230243409489118!3d38.74360570358504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1676580688631!5m2!1spt-PT!2spt"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figcaption>
+        </figure>
+    </main>
 
-        <main>
-            <p>A capital de Portugal</p>
-            <figure><figcaption><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99580.03468301838!2d-9.230243409489118!3d38.74360570358504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1676580688631!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figcaption></figure>
-        </main>
-        
+    <footer>
+        <p>Bruno Martinho - a22400694 - Universidade Lusófona - 2025</p>
+    </footer>
+</body>
 
-        <br><br>
-        <footer>
-            <p>Bruno Martinho - a22400694 - Universidade Lusófona - 2025</p>
-        </footer>
-
-        
-    </body>
 </html>

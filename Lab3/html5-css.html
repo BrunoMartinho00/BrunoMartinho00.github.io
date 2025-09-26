@@ -1,180 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <title>HTML5 e CSS</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Bruno Martinho">
-        <meta name="description" content="Website sobre Lisboa">
-        <meta name="keywords" content="palavras chave">
-        <link rel="stylesheet" href="estilos.css">
 
-        <style>
-            table, th, td, tr{
-                border: 1px solid;
-                border-collapse: collapse;
-                border-color: black;
-                width: 40%;
-            }
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 e CSS</title>
+  <meta name="author" content="Bruno Martinho">
+  <meta name="description" content="Website sobre Lisboa">
+  <meta name="keywords" content="palavras chave">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 90%;
+      margin: 20px auto;
+      background-color: #242526;
+    }
 
-            th, td{
-                padding: 8px;
-            }
-        </style>
-    </head>
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
 
-    <body>
-        <header>
-            <h1>Lisboa</h1>
-            <img src="images/images.jpg" alt="Lisboa">
-            <br><br>
-        </header>
+<body>
+  <header>
+    <h1>Lisboa</h1>
+    <img src="images/images.jpg" alt="Lisboa">
 
+    <!-- Checkbox invisível para controlar o menu -->
+    <input type="checkbox" id="menu-toggle">
+    <!-- Ícone hambúrguer visível apenas em ecrãs pequenos -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-        <nav>
-            <a href="index.html" class="naveg">Introdução</a>
-            <a href="local.html" class="naveg">Localização</a>
-            <a href="multimedia.html" class="naveg">Multimedia</a>
-            <a href="info.html" class="naveg">Informação</a>
-            <a href="quizz.html" class="naveg">Quizz</a>
-            <a href="html5-css.html" class="naveg" style="border-bottom: 3px solid gray;">HTML5 e CSS</a>
-        </nav>
-        <br><br>
+    <nav>
+      <a href="index.html" class="naveg">Introdução</a>
+      <a href="local.html" class="naveg">Localização</a>
+      <a href="multimedia.html" class="naveg">Multimedia</a>
+      <a href="info.html" class="naveg">Informação</a>
+      <a href="quizz.html" class="naveg">Quizz</a>
+      <a href="html5-css.html" class="naveg" style="border-bottom:3px solid gray;">HTML5 e CSS</a>
+    </nav>
+  </header>
 
+  <main>
+    <h3>HTML5 e CSS</h3>
+    <section>
+      <table>
+        <caption><strong>Elementos Semânticos</strong></caption>
+        <tr>
+          <th>Elemento</th>
+          <th>Usei?</th>
+          <th>Onde usei?</th>
+        </tr>
+        <tr>
+          <td>header</td>
+          <td>✔</td>
+          <td>Em todas as páginas com o título e a fotografia</td>
+        </tr>
+        <tr>
+          <td>nav</td>
+          <td>✔</td>
+          <td>Em todas as páginas para a navegação</td>
+        </tr>
+        <tr>
+          <td>main</td>
+          <td>✔</td>
+          <td>Em todas as páginas com o conteúdo principal</td>
+        </tr>
+        <tr>
+          <td>article</td>
+          <td>❌</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>section</td>
+          <td>✔</td>
+          <td>Na maioria das páginas para separar conteúdo</td>
+        </tr>
+        <tr>
+          <td>aside</td>
+          <td>❌</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>footer</td>
+          <td>✔</td>
+          <td>Em todas as páginas com a minha identificação</td>
+        </tr>
+      </table>
 
-        <main>
-            <h3>HTML5 e CSS</h3><br>
-            <section>
-                <table>
-                    <tr>
-                        <th>Elementos semânticos</th>
-                        <th>Usei?</th>
-                        <th>Onde usei?</th>
-                    </tr>
-                    <tr>
-                        <td>header</td>>
-                        <td>✔</td>
-                        <td>Em todas as páginas com o título e a fotografia</td>
-                    </tr>
-                    <tr>
-                        <td>nav</td>>
-                        <td>✔</td>
-                        <td>Em todas as páginas para a navegação</td>
-                    </tr>
-                    <tr>
-                        <td>main</td>>
-                        <td>✔</td>
-                        <td>Em todas as páginas com o conteúdo de cada página</td>
-                    </tr>
-                    <tr>
-                        <td>article</td>>
-                        <td>❌</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>section</td>>
-                        <td>✔</td>
-                        <td>Na maioria das páginas para separar as coisas</td>
-                    </tr>
-                    <tr>
-                        <td>aside</td>>
-                        <td>❌</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>footer</td>>
-                        <td>✔</td>
-                        <td>Em todas as páginas com a minha identificação</td>
-                    </tr>
-                </table>
+      <table>
+        <caption><strong>Seletores CSS</strong></caption>
+        <tr>
+          <th>Seletor</th>
+          <th>Usei?</th>
+          <th>Onde usei?</th>
+        </tr>
+        <tr>
+          <td>universal</td>
+          <td>✔</td>
+          <td>No início do CSS para reset global *</td>
+        </tr>
+        <tr>
+          <td>tipo</td>
+          <td>✔</td>
+          <td>Ex.: body, nav, header, footer</td>
+        </tr>
+        <tr>
+          <td>classe</td>
+          <td>✔</td>
+          <td>Classes como .naveg e .menu-icon</td>
+        </tr>
+        <tr>
+          <td>id</td>
+          <td>✔</td>
+          <td>Ex.: #menu-toggle</td>
+        </tr>
+        <tr>
+          <td>atributo</td>
+          <td>❌</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>pseudo-classe</td>
+          <td>✔</td>
+          <td>Ex.: a:hover, a:visited</td>
+        </tr>
+        <tr>
+          <td>pseudo-elemento</td>
+          <td>❌</td>
+          <td>—</td>
+        </tr>
+      </table>
 
-                <section>
-                    <p>Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos a uma página web</p>
-                    <table>
-                        <tr>
-                            <th>Seletores CSS</th>
-                            <th>Usei?</th>
-                            <th>Onde usei?</th>
-                        </tr>
-                        <tr>
-                            <td>universal</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>tipo</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>classe</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>id</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>atributo</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>pseudo-classe</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>pseudo-elemento</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                    </table><br>
+      <table>
+        <caption><strong>Combinadores de seletores</strong></caption>
+        <tr>
+          <th>Combinador</th>
+          <th>Usei?</th>
+          <th>Onde usei?</th>
+        </tr>
+        <tr>
+          <td>Descendentes ( )</td>
+          <td>✔</td>
+          <td>Ex.: header img</td>
+        </tr>
+        <tr>
+          <td>Filhos (&gt;)</td>
+          <td>❌</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Adjacentes (+)</td>
+          <td>❌</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Imediatamente adjacentes (~)</td>
+          <td>✔</td>
+          <td>Menu hamburguer: #menu-toggle:checked ~ nav</td>
+        </tr>
+        <tr>
+          <td>Agrupado (,)</td>
+          <td>✔</td>
+          <td>Ex.: header, footer { ... }</td>
+        </tr>
+      </table>
+    </section>
+  </main>
 
-                    <table>
-                        <tr>
-                            <th>Combinadores de seletores</th>
-                            <th>Usei?</th>
-                            <th>Onde usei?</th>
-                        </tr>
-                        <tr>
-                            <td>Descendentes</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>filhos</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>adjacentes</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Imediatamente adjacentes</td>>
-                            <td>❌</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Agrupado</td>>
-                            <td>✔</td>
-                            <td>Página Info</td>
-                        </tr>
-                    </table>
-                </section>
-            </section><br>
-            
-        </main>
-        
+  <footer>
+    <p>Bruno Martinho - a22400694 - Universidade Lusófona - 2025</p>
+  </footer>
+</body>
 
-        <br><br>
-        <footer>
-            <p>Bruno Martinho - a21904754 - Universidade Lusófona - 2023</p>
-        </footer>
-
-        
-    </body>
 </html>
