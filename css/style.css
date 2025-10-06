@@ -90,16 +90,16 @@ nav a:hover {
 }
 
 .cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
 
 .card {
-  background: white;
   width: 280px;
-  padding: 20px;
+  background: white;
+  padding: 30px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
@@ -107,6 +107,12 @@ nav a:hover {
   display: grid;
   align-items: center;
   color: black;
+  cursor: pointer;
+}
+
+.cards a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card:hover {

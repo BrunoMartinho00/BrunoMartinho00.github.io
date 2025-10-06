@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Rato e Interatividade</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header onmouseover="destacarHeader()" onmouseout="normalHeader()">
+        <h1>Bem-vindo ao meu site!</h1>
+    </header>
+
+    <main onmousemove="mostrarPosicao(event)">
+        <section>
+            <p id="mensagem">Passa o rato pelos botões e vê o que acontece!</p>
+
+            <div class="area">
+                <p id="areaRato" onmouseover="entrouArea()" onmouseout="saiuArea()">
+                    Passa o rato aqui!
+                </p>
+            </div>
+
+            <div class="area">
+                <p id="pintameText">Pinta-me!</p>
+                <button onclick="redButton()">Vermelho</button>
+                <button onclick="greenButton()">Verde</button>
+                <button onclick="blueButton()">Azul</button>
+                <button ondblclick="resetColor()">Duplo clique para limpar</button>
+            </div>
+
+            <div class="area">
+                <p id="escreveText">Escreve uma cor em inglês</p>
+                <input type="text" id="texto" oninput="changeColorInput()">
+            </div>
+
+            <div class="area">
+                <p id="contador">Cliques: 0</p>
+                <button id="btnContador" onclick="count()">Conta</button>
+            </div>
+
+            <div class="area">
+                <img id="foto" src="https://picsum.photos/300" alt="Imagem aleatória"
+                 onmouseover="imagemGrande()" onmouseout="imagemNormal()">
+            </div>
+            
+        </section>
+    </main>
+
+    <footer ondblclick="mudarFooter()">
+        <p>Feito por Bruno Martinho</p>
+    </footer>
+</body>
+</html>
