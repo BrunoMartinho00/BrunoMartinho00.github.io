@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 5</h1>
+    </header>
+
+
+    <main onmousemove="mostrarPosicao(event)">
+        <section>
+            <div class="area">
+                <p id="areaRato" onmouseover="entrouArea()" onmouseout="saiuArea()">
+                    1. Passa o rato aqui!
+                </p>
+            </div>
+
+            <div class="area">
+                <p id="pintameText">2. Pinta-me!</p>
+                <button class="color" data-color="red">Vermelho</button>
+                <button class="color" data-color="green">Verde</button>
+                <button class="color" data-color="blue">Azul</button>
+            </div>
+
+            <div class="area">
+                <p>3. Experimenta escrever...</p>
+                <input type="text" id="palavra">
+            </div>
+
+            <div class="area">
+                <form>
+                    <p id="escreveText">4. Escreve uma cor em inglês</p>
+                    <input type="text" id="texto">
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div class="area">
+                <p id="contador">5. Cliques: <span id="contadorValor">0</span></p>
+                <button id="btnContador" onclick="count()">Conta</button>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>
