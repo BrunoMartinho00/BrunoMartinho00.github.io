@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Amazon Portugal</h1>
+
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="productsTitle">
+            <h2>Products</h2>
+            <article>
+                <label for="searchBox">Pesquisar:</label>
+                <input type="search" id="searchBox" placeholder="Pesquisar produtos..." />
+                <label for="categoryFilter">Filtrar por categoria:</label>
+                <select id="categoryFilter">
+                    <option value="">Todas</option>
+                </select>
+                <label for="sortOrder" style="margin-left:1rem">Ordenar por preço:</label>
+                <select id="sortOrder">
+                    <option value="">Nenhuma</option>
+                    <option value="asc">Crescente</option>
+                    <option value="desc">Decrescente</option>
+                </select>
+            </article>
+
+        </article>
+
+        <section id="products">
+        </section>
+
+
+        <article id="checkoutZone">
+            <h2>Cart</h2>
+            <section id="cart">
+            </section>
+
+            <h3 id="total">Total: </h3>
+            <div id="checkoutControls">
+                <label for="buyerName">Nome:</label>
+                <input id="buyerName" type="text" placeholder="Nome completo">
+                <label for="studentCheckbox" style="margin-left:8px"><input id="studentCheckbox" type="checkbox">
+                    Estudante</label>
+                <label for="coupon" style="margin-left:8px">Cupão:</label>
+                <input id="coupon" type="text" placeholder="Código do cupão">
+                <button id="checkoutBtn">Finalizar encomenda</button>
+            </div>
+            <div id="orderResult" aria-live="polite" style="margin-top:8px"></div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Lab 7</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
